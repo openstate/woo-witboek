@@ -1,0 +1,15 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /usr/src/app
+    volumes:
+      - ./:/usr/src/app
+    command: make witboek
+    networks:
+      - nginx-load-balancer
+networks:
+  nginx-load-balancer:
+    name: docker_nginx-load-balancer
+    external: true

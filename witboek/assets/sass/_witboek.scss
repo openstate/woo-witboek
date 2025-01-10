@@ -1,0 +1,59 @@
+#top {
+    height: 100vh;
+}
+
+#top::before,
+#top::after {
+    content: '';
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+#top::before {
+    background-image: url("/assets/img/witteblaadjes.svg");
+    top: 0;
+    left: 0;
+    right: 75vw;
+    bottom: 0;
+    transform: rotate(-120deg) scale(2.5);
+}
+
+#top::after {
+    background-image: url("/assets/img/witteblaadjes.svg");
+    top: 0;
+    left: 60vw;
+    right: 0;
+    bottom: 0;
+    transform: scale(1.5);
+}
+
+.top-title {
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the text */
+
+    h1 {
+        width: max-content;
+        max-width: 30ch;
+        white-space: pre-wrap;
+        text-shadow: 0 0.3rem #444475;
+    }
+}
+
+.top-subtitle {
+    font-size: 2rem;
+    text-shadow: 0.1rem 0.1rem #444475;
+}
+
+.h3-11-cases {
+	font-weight: 600 !important;
+	font-family: $font-anton;
+	margin-right: 50px;
+}
+
+.case-example-caveat {
+	font-family: $font-caveat;
+	font-size: 2.6rem;
+}
