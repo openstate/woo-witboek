@@ -133,12 +133,6 @@ $spacers: (
 $body-color: $black;
 
 $link-color: $color-mysoc-purple;
-#team a {
-    color: darken($color-mysoc-purple, 11%);
-}
-#facts-and-figures a {
-    color: $color-mysoc-violet;
-}
 ul a,
 p a {
     text-decoration: underline !important;
@@ -154,7 +148,7 @@ $font-family-base: $font-montserrat;
 // frankly huge) and then use Bootstrap's Responsive Font Size system to scale
 // those font sizes down to something more normal on the narrowest screens.
 $enable-responsive-font-sizes: true;
-$font-size-base: 2rem; // about 44px
+$font-size-base: 2rem;
 $h1-font-size: 9rem;
 $h2-font-size: 9.5rem;
 $h3-font-size: 2.5rem;

@@ -7,3 +7,4 @@
 /.env
 /conf/httpd.conf
 /conf/httpd.conf.deployed
+*.swp
