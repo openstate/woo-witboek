@@ -2,21 +2,21 @@
     height: 100vh;
 }
 
-#top::before,
-#top::after {
-    content: '';
-    position: absolute;
-    background-repeat: no-repeat;
-}
-
-#top::before {
-    background-image: url("/assets/img/witteblaadjes.svg");
-    top: 0;
-    left: 0;
-    right: 75vw;
-    bottom: 0;
-    transform: rotate(-120deg) scale(2.5);
-}
+//#top::before,
+//#top::after {
+//    content: '';
+//    position: absolute;
+//    background-repeat: no-repeat;
+//}
+//
+//#top::before {
+//    background-image: url("/assets/img/witteblaadjes.svg");
+//    top: 0;
+//    left: 0;
+//    right: 75vw;
+//    bottom: 0;
+//    transform: rotate(-120deg) scale(2.5);
+//}
 
 //#top::after {
 //    background-image: url("/assets/img/witteblaadjes.svg");
@@ -42,8 +42,12 @@
 }
 
 .top-subtitle {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-shadow: 0.1rem 0.1rem #444475;
+
+    @include media-breakpoint-up(md) {
+        font-size: 2rem
+    }
 }
 
 .h3-11-cases {
